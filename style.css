@@ -1,0 +1,38 @@
+div {
+    color: blue;
+}
+
+div:hover {
+    padding-left: 50px;
+    transition: all 2s;
+}
+
+img {
+    max-width: 100%;
+}
+@media print {
+    div > p {
+        color: initial;
+    }
+    #teste {
+        display: none;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 850px){
+    div {
+        color: green;
+    }
+}
+
+@media (min-width:850px){
+    div{
+        color: red;
+    }
+}
+
+@media (hover: none){
+    div {
+        padding-left: 50px;
+    }
+}
